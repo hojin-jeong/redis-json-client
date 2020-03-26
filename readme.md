@@ -29,6 +29,11 @@ const opts = {
   db: 0,
   password: 'password'
 }
+
+or
+
+const opts = "/tmp/redis.sock"
+
 const client = new RedisJSONClient(opts)
 
 // Redis 연결

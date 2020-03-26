@@ -1,6 +1,6 @@
 {
   "name": "redis-json-client",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "NodeJS Client for RedisJSON",
   "main": "index.js",
   "directories": {
@@ -12,8 +12,10 @@
   "keywords": [
     "redis",
     "redisjson",
+    "json",
     "node",
-    "backend"
+    "backend",
+    "redis-json-client"
   ],
   "homepage": "https://github.com/hojin-jeong/redis-json-client",
   "bugs": {
