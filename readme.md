@@ -89,13 +89,37 @@ client.type(keys, path)
 ### JSON.NUMINCRBY
 ```javascript
 client.inc(key, path, value)
-  .then(result)
+  .then(json)
   .catch(err)
 ```
 ### JSON.NUMMULTBY
 ```javascript
 client.mul(key, path, value)
-  .then(result)
+  .then(json)
+  .catch(err)
+```
+### JSON.STRAPPEND
+```javascript
+client.strand(key, path, value)
+  .then(length)
+  .catch(err)
+```
+### JSON.STRLEN
+```javascript
+client.strand(key, path)
+  .then(length)
+  .catch(err)
+```
+### JSON.ARRAPPEND
+```javascript
+client.arrand(key, path, values)
+  .then(size)
+  .catch(err)
+```
+### JSON.ARRINDEX
+```javascript
+client.arridx(key, path, value)
+  .then(index)
   .catch(err)
 ```
 
