@@ -48,7 +48,7 @@ client.connect()
   })
 ```
 
-# Commands
+# Command Examples
 
 ### JSON.GET
 ```javascript
@@ -58,7 +58,7 @@ client.get(key, path)
 ```
 ### JSON.SET
 ```javascript
-client.set(key, path, value, { recursive })
+client.set(key, path, value, { recursive: true })
   .then(result)
   .catch(err)
 ```
@@ -78,6 +78,24 @@ client.forgot(key, path)
 ```javascript
 client.type(key, path)
   .then(type)
+  .catch(err)
+```
+### JSON.MGET
+```javascript
+client.type(keys, path)
+  .then(json)
+  .catch(err)
+```
+### JSON.NUMINCRBY
+```javascript
+client.inc(key, path, value)
+  .then(result)
+  .catch(err)
+```
+### JSON.NUMMULTBY
+```javascript
+client.mul(key, path, value)
+  .then(result)
   .catch(err)
 ```
 
