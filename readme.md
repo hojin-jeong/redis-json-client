@@ -1,14 +1,16 @@
 
 # RedisJSON-Client
-[![npm version](https://badge.fury.io/js/redis-json-client.svg)](https://badge.fury.io/js/redis-json-client)
+[![GitHub](https://img.shields.io/github/license/hojin-jeong/redis-json-client)](https://github.com/hojin-jeong/redis-json-client/blob/master/license.md)
+[![npm](https://img.shields.io/npm/v/redis-json-client)](https://badge.fury.io/js/redis-json-client)
 
 Redis에서 JSON타입을 직접 사용할 수 있게 만들어주는 RedisJSON의 NodeJS 클라이언트
+
 (https://github.com/RedisJSON/RedisJSON)
 
-IORedis의 createBuiltinCommand를 사용하여 만들어졌음.
-(https://github.com/luin/ioredis)
+# Compatibility
 
-모든 명령어는 Promise로 리턴하므로 async await 사용가능.
+### RedisJSON / All Command Support
+### RedisJSON2 / Not Confirmed
 
 # Quick Start
 
@@ -82,7 +84,7 @@ client.type(key, path)
 ```
 ### JSON.MGET
 ```javascript
-client.type(keys, path)
+client.mget(keys, path)
   .then(json)
   .catch(err)
 ```
@@ -106,7 +108,7 @@ client.strand(key, path, value)
 ```
 ### JSON.STRLEN
 ```javascript
-client.strand(key, path)
+client.strlen(key, path)
   .then(length)
   .catch(err)
 ```
@@ -120,6 +122,54 @@ client.arrand(key, path, values)
 ```javascript
 client.arridx(key, path, value)
   .then(index)
+  .catch(err)
+```
+### JSON.ARRINSERT
+```javascript
+client.arrins(key, path, index, values)
+  .then(size)
+  .catch(err)
+```
+### JSON.ARRLEN
+```javascript
+client.arrlen(key, path)
+  .then(size)
+  .catch(err)
+```
+### JSON.ARRPOP
+```javascript
+client.arrpop(key, path, [index])
+  .then(json)
+  .catch(err)
+```
+### JSON.ARRTRIM
+```javascript
+client.arrtrim(key, path, start, end)
+  .then(size)
+  .catch(err)
+```
+### JSON.OBJKEYS
+```javascript
+client.objkeys(key, path)
+  .then(json)
+  .catch(err)
+```
+### JSON.OBJLEN
+```javascript
+client.objlen(key, path)
+  .then(size)
+  .catch(err)
+```
+### JSON.DEBUG
+```javascript
+client.debug(args)
+  .then(json)
+  .catch(err)
+```
+### JSON.RESP
+```javascript
+client.resp(args)
+  .then(json)
   .catch(err)
 ```
 
