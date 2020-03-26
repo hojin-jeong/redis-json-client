@@ -35,7 +35,7 @@ const client = new RedisJSONClient(opts)
 client.connect()
   .then(_ => {
     // 데이터 저장 (부모가 존재하지 않으면 생성)
-    client.setForce('key', 'path.a.b', {alpha: 'beta'})
+    client.set('key', 'path.a.b', {alpha: 'beta'}, {recursive: true})
       .then(_ => {
         // 데이터 불러오기
         client.get('key', 'path.a.b.alpha')
