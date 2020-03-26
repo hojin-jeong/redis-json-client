@@ -66,6 +66,12 @@ client.del(key, path)
   .then(result)
   .catch(err)
 ```
+### JSON.FORGOT
+```javascript
+client.forgot(key, path)
+  .then(result)
+  .catch(err)
+```
 ### JSON.TYPE
 ```javascript
 client.type(key, path)
