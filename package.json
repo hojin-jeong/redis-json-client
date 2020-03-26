@@ -1,0 +1,38 @@
+{
+  "name": "redis-json-client",
+  "version": "0.1.0",
+  "description": "NodeJS Client for RedisJSON",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "redisjson",
+    "node",
+    "backend"
+  ],
+  "homepage": "https://github.com/hojin-jeong/redis-json-client",
+  "bugs": {
+    "url": "https://github.com/hojin-jeong/redis-json-client/issues",
+    "email": "a66764765@gmail.com"
+  },
+  "author": {
+    "name": "hojin.jeong",
+    "email": "a66764765@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hojin-jeong/redis-json-client.git"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^4.16.0"
+  }
+}
