@@ -1,4 +1,6 @@
+
 # RedisJSON-Client
+[![npm version](https://badge.fury.io/js/redis-json-client.svg)](https://badge.fury.io/js/redis-json-client)
 
 Redis에서 JSON타입을 직접 사용할 수 있게 만들어주는 RedisJSON의 NodeJS 클라이언트
 (https://github.com/RedisJSON/RedisJSON)
