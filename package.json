@@ -1,6 +1,6 @@
 {
   "name": "redis-json-client",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "NodeJS Client for RedisJSON",
   "main": "index.js",
   "directories": {
