@@ -1,6 +1,6 @@
 {
   "name": "redis-json-client",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "NodeJS Client for RedisJSON",
   "main": "index.js",
   "directories": {
@@ -35,6 +35,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "ioredis": "^4.16.2"
+    "ioredis": "^5.3.2"
   }
 }
